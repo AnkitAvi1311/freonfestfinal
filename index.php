@@ -52,7 +52,7 @@ if(isset($_SESSION['user'])){
                         <?php
                     }else{
                         ?>
-                        <li class="right signup" style="border: 1px solid white;border-radius: 20px;padding: 0px 15px;"><a href="#">Register</a></li>
+                        <li class="right signup" style="border: 1px solid white;border-radius: 30px;padding: 0px 15px;"><a href="#">Register</a></li>
                 <li class="right" style="margin-right: 15px;"><a href="#">Login</a></li>
 
                 <?php
