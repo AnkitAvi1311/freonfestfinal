@@ -1,11 +1,8 @@
 <?php
+
 include "models/user.php";
 include "controllers/session.php";
 session_start();
-$user;
-if(isset($_SESSION['user'])){
-    $user = $_SESSION['user'];
-}
 
 ?>
 
@@ -29,6 +26,7 @@ if(isset($_SESSION['user'])){
             color: white;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- heading of the website -->
@@ -42,19 +40,19 @@ if(isset($_SESSION['user'])){
             <h3>Amiempresia's</h3>
             <h1 style="color: orange;">FREONFEST</h1>
             <h1 style="color: orange;text-align: right;font-size: 80px;">2k19</h1>
-            <h3 style="text-align: right">Ranchi's Biggest Fest</h3>
+            <h3 style="text-align: right">Ranchi's Biggest Festival</h3>
         </div>
 
     </div>
     
     <!-- about us -->
-    <div class="height-100" id="about">
+    <div class="height-100" id="about" style="background-color: lightgrey;">
         <div class="row">
             <div class="col-7">
-                <h1 style="font-size:60px;color: black;text-align:center;font-family: Lato, 'sans-serif';margin-top:85px;color:white">ABOUT US</h1>
+                <h1 style="font-size:60px;color: black;text-align:center;font-family: Lato, 'sans-serif';margin-top:85px;">ABOUT US</h1>
             </div>
             <div class="col-4">
-                <p style="font-size: 18px;margin-top: 100px;color:white;font-family: Lato, 'sans-serif';line-height:30px;">
+                <p style="font-size: 18px;margin-top: 100px;color:#414141;font-family: Lato, 'sans-serif';line-height:30px;">
                 FREONFEST <br/>
                 It was started by a group of friends. It's main aim is to unite college students and bring them together & cultivate academics,  sports, arts, music etc in them so that they may have opportunity to showcase therir extralent apart from studies & mingle with people from various other colleges. As college life is very different from school life & we don't get many opportunities & stage to showcase our talents. This time we are having "FREONFEST".
                 </p>

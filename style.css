@@ -8,6 +8,7 @@ html,body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     font-family: 'Lato', sans-serif;
+    user-select: none;
 }
 #particles-js{
     height: 100%;
@@ -191,7 +192,7 @@ html,body{
   }
   
 #about{
-    background: dodgerblue url(https://moodi.org/images/baloon_head.png);
+    background: url(https://moodi.org/images/baloon_head.png);
     background-repeat: no-repeat;
 }
 
@@ -212,7 +213,7 @@ html,body{
     display: none;
     padding: 10px 0px;
     left: 480px;
-    top: 60px;
+    top: 55px;
 }
 .dropdown .drop-content > div > a {
     color: black;
@@ -227,3 +228,31 @@ html,body{
 .dropdown:hover .drop-content{
     display: block;
 }
+
+.dropdown1{
+    display: inline-block;
+}
+.drop-content1{
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    display: none;
+    padding: 10px 0px;
+    right: 100px;
+    top: 65px;
+    width:150px;
+}
+.dropdown1 .drop-content1 > div > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: all .3s ease;
+}
+.dropdown1 .drop-content1 > div > a:hover {
+    background: lightgrey;
+}
+.dropdown1:hover .drop-content1{
+    display: block;
+}
+
