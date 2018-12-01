@@ -64,7 +64,7 @@ if(Session::check("user")){
             display: none;
         }
         #particles-js{
-            background:linear-gradient(330deg,orange,purple);
+            background:linear-gradient(330deg,yellow,purple);
         }
         #myhead{
             display:block;
@@ -130,69 +130,22 @@ if(Session::check("user")){
                 <li><a href="../views/events.php">Events</a></li>
                 <li><a href="../index.php#social">Social Cause</a></li>
                 <li><a href="../index.php#sponsors">Sponsors</a></li>
+
+                
+                        <li class="right signup" style="border: 1px solid white;border-radius: 30px;padding: 0px 15px;"><a href="signup.php">Register</a></li>
+                <li class="right" style="margin-right: 15px;"><a href="signup.php?msg=login">Login</a></li>
+
             </ul>
         </nav>
         <!-- Registeration form  -->
-        <div class="register" id="signupform">
-            <form action="../controllers/signup.ini.php" method="POST" class="myform" id="form">
+        
+        <div class="register">
+            <form action="../controllers/forgot.php" method="POST" class="myform" id="form1">
                 <div class="logo">
-                <h3 style="font-size:25px;margin:45px 0px 20px;color: White;float:left;">Register</h3>
+                <h3 style="font-size:25px;margin:45px 0px 20px;color: White;float:left;">Reset Password</h3>
                     <img src="../log.png" class="logo">
                 </div>
-                <h3 style="font-size:25px;margin:0px 0px 20px;color: pureple;" id="myhead">Register</h3>
-                <div class="title" style="margin-top:25px;">
-                    <label for="fname">Full Name</label>
-                    <input type="text" name="fname" id="fname" required="required">
-                </div>
-                <div class="title">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" required="required">
-                </div>
-                <div class="title">
-                    <label for="phone">Mobile Number</label>
-                    <input type="number" name="phone" id="phone" required="required">
-                </div>
-                <div class="title">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required="required">
-                </div>
-                
-                <div class="title">
-                    <label for="college">College Name</label>
-                    <select name="college" id="college" required="required">
-                        <option value="Birla Institute of Technology, Ranchi">BIT Mesra, Ranchi</option>
-                        <option value="St. Xavier's Ranchi">St. Xavier's Ranchi</option>
-                        <option value="Gossner College, Ranchi">Gossner College</option>
-                        <option value="BIT Mesra, Mesra">BIT Mesra, Main Cmapus </option>
-                        <option value="other">Other</option>
-                    </select>
-                    <input type="text" id="college1" style="display:none;" name="college1" placeholder="college name ">
-                    <div style="margin-top:15px;font-size: 14px;">
-                        Already have an account? <a href="" id="click1">Login here</a>
-                    </div>
-                </div>
-                <p style="color:red;">
-                    <?php
-                    if(isset($_GET['error'])){
-                        echo $_GET['error'];
-                    }
-                    ?>
-                </p>
-                <div class="title">
-                    <input type="submit" value="Register" name="submit" class="btn">
-                </div>
-                
-            </form>
-        </div>
-
-
-        <div class="register" id="loginform" style="display:none">
-            <form action="../controllers/login.php" method="POST" class="myform" id="form1">
-                <div class="logo">
-                <h3 style="font-size:25px;margin:45px 0px 20px;color: White;float:left;">Login</h3>
-                    <img src="../log.png" class="logo">
-                </div>
-                <h3 style="font-size:25px;margin:0px 0px 20px;color: pureple;" id="myhead">Login</h3>
+                <h3 style="font-size:25px;margin:0px 0px 20px;color: pureple;" id="myhead">Reset Password</h3>
                 
                 <div class="title" style="margin-top:30px;">
                     <label for="email1">Email Address</label>
@@ -200,26 +153,7 @@ if(Session::check("user")){
                 </div>
                 
                 <div class="title">
-                    <label for="password1">Password</label>
-                    <input type="password" name="password" id="password1" required="required">
-                </div>
-                
-                <div style="margin-top:15px;font-size: 14px;font-weight: bold;">
-                        Don't have an account? <a href="" id="click2">Signup here</a>
-                    </div>
-                
-                <div style="margin-top:15px;font-size: 14px;text-align:right">
-                    Forgot Password? <a href="../views/forgot.php">Reset Password</a>
-                </div>
-                <p style="color:red;">
-                    <?php
-                    if(isset($_GET['error'])){
-                        echo $_GET['error'];
-                    }
-                    ?>
-                </p>
-                <div class="title">
-                    <input type="submit" value="Login" name="submit" class="btn">
+                    <input type="submit" value="Reset Password" name="submit" class="btn">
                 </div>
                 
             </form>

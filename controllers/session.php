@@ -44,7 +44,7 @@ function navigation() {
                         </a>
                             <div class="drop-content1">
                                 <div><a href="">Profile</a></div>
-                                <div><a href="">Logout</a></div>
+                                <div><a href="controllers/forgot.php">Logout</a></div>
                             </div>
                         </li>
                         <?php
